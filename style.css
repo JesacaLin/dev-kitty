@@ -137,8 +137,8 @@ header {
   align-items: center;
   justify-content: flex-end;
   max-width: 50%;
-  min-height: 30rem;
-  margin: 27rem auto 0 auto;
+  min-height: 26rem;
+  margin: 30rem auto 0 auto;
 }
 
 /* input[type="text"] {
@@ -216,7 +216,7 @@ button:hover {
 }
 
 /********** MEDIA QUERIES **************/
-@media (max-width: 806px) {
+/* @media (max-width: 806px) {
   .span-logo {
     display: none;
   }
@@ -264,4 +264,4 @@ button:hover {
   .content {
     margin: 25rem auto 0 auto;
   }
-}
+} */
