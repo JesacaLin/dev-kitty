@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Dev Kitty At Your Service</title>
+  </head>
+
+  <body>
+    <div class="container-header">
+      <header>
+        <img src="img/logo2.png" class="logo" alt="logo" />
+        <nav>
+          <img
+            src="img/hamburger-yellow.png"
+            class="hamburger"
+            alt="hamburger menu"
+          />
+          <ul class="ul-flex">
+            <div class="dropdown">
+              <span>DISCLAIMER</span>
+              <div class="dropdown-content">
+                <p>
+                  When in doubt, consult the
+                  <a href="https://developer.mozilla.org/">almighty MDN!</a> If
+                  you prefer Russian roulette...try
+                  <a href="https://stackoverflow.com/">Stack Overflow</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <span>CONTACT</span>
+              <div class="dropdown-content">
+                <ul>
+                  <span>JESACA LIN</span>
+                  <a href="https://github.com/JesacaLin" target="_blank"
+                    >Github</a
+                  >
+                  <a href="https://twitter.com/JesacaSoubiLin" target="_blank"
+                    >Twitter</a
+                  >
+                  <a href="https://www.jesacalin.com/" target="_blank"
+                    >Portfolio</a
+                  >
+                  <a
+                    href="https://www.instagram.com/jesacaslin/"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="content">
+          <h1>Ready for your dev tip of the day?</h1>
+
+          <button class="show-modal" type="button" name="button">
+            Ask Meow!
+          </button>
+
+          <div class="modal hidden">
+            <h1>I'm a modal window</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem maiores hic beatae suscipit? Iure officiis iusto
+              laborum, omnis ab explicabo fuga dolorem quisquam fugiat,
+              inventore vero repudiandae necessitatibus earum quam doloremque
+              incidunt temporibus, dolor ut eaque id esse nisi. Perferendis
+              dignissimos tenetur autem ad repudiandae explicabo, quis
+              repellendus aliquam veritatis adipisci?
+            </p>
+            <button class="close-modal">&times;</button>
+          </div>
+
+          <div class="overlay hidden"></div>
+        </section>
+      </main>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

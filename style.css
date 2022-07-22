@@ -1,0 +1,267 @@
+/********** BASE STYLES **************/
+
+:root {
+  font-size: 16px;
+  line-height: 3.5rem;
+}
+
+body {
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background: url("img/bg-illo-3.2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center center;
+  background-attachment: fixed;
+  /* min-height: 100%; */
+}
+
+h1,
+h2 {
+  padding: 0.5rem 0;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 1rem + 4vw, 3rem);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: -0.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: -1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fbcc18;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+/********** HEADER **************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 2rem;
+  padding: 1rem 3rem 0.5rem 3rem;
+}
+
+.ul-flex {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+.a-about:hover,
+.a-contact:hover {
+  color: #54e1e4;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.span-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+/***********DROP DOWN ***************/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown span {
+  font-size: 1rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(to left, pink, #f8cd1a);
+  min-width: 10rem;
+  min-height: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.8rem;
+  z-index: 1;
+  right: 0;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  text-align: center;
+  list-style: none;
+}
+
+.dropdown-content a {
+  color: white;
+  list-style: none;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.dropdown-content span {
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-top: -1rem;
+}
+
+/********** MAIN **************/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 50%;
+  min-height: 30rem;
+  margin: 27rem auto 0 auto;
+}
+
+/* input[type="text"] {
+  width: 23rem;
+  height: 2.5rem;
+  color: #5f5d5d;
+  background: white;
+  border-radius: 10rem;
+  border: none;
+  font-size: 0.8rem;
+  padding-left: 1.5rem;
+  box-shadow: 0 13px 11px 7px rgba(0, 0, 0, 0.05);
+  margin-top: 8%;
+} */
+
+button {
+  width: 12rem;
+  height: 5rem;
+  color: white;
+  background: linear-gradient(to left, pink, #f8cd1a);
+  border-radius: 5rem;
+  border: none;
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 5% 0 20% 0;
+}
+
+button:hover {
+  background: #54e1e4;
+  background: linear-gradient(to left, #54e1e4, pink);
+}
+
+/********** MODAL **************/
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  color: black;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.close-modal {
+  width: 5rem;
+  height: 5rem;
+  color: white;
+  background: linear-gradient(to left, pink, #f8cd1a);
+  border-radius: 5rem;
+  border: none;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+/********** MEDIA QUERIES **************/
+@media (max-width: 806px) {
+  .span-logo {
+    display: none;
+  }
+
+  .content {
+    margin: 22rem auto 0 auto;
+  }
+
+  .dropdown span {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: clamp(1.3rem, 1rem + 4vw, 2.5rem);
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  input[type="text"] {
+    width: 13rem;
+    height: 3rem;
+  }
+
+  button {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  body {
+    background-position: center 30%;
+  }
+
+  header {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .content {
+    margin: 25rem auto 0 auto;
+  }
+}
