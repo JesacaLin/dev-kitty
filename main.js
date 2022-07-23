@@ -1,22 +1,40 @@
-// document.querySelector(".show-modal").addEventListener("click", answer);
+"use strict";
 
-// let meowAnswers = [
-//   "You should go for it!",
-//   "No way, Bro!",
-//   "You know what you need to do",
-// ];
+//***********RANDOMLY GENERALLY TIPS*********
+//Will export this data to another document in the future
 
-// function answer() {
-//   let answer = meowAnswers[Math.floor(Math.random() * meowAnswers.length)];
+const htmlTips = [
+  "What does a doctype do?",
+  "How do you serve a page with content in multiple languages?",
+  "What kind of things must you be wary of when design or developing for multilingual sites?",
+];
 
-//   const questionField = document.querySelector("#questionField").value;
+const cssTips = [
+  "What is CSS selector specificity and how does it work?",
+  "What's the difference between 'resetting' and 'normalizing' CSS? Which would you choose, and why?",
+  "Describe z-index and how stacking context is formed.",
+];
 
-//   alert(answer);
-// }
+document
+  .querySelector(".html")
+  .addEventListener(
+    "click",
+    () =>
+      (document.querySelector("#tipParagraph").textContent =
+        htmlTips[Math.floor(Math.random() * htmlTips.length)])
+  );
 
-("use strict");
+document
+  .querySelector(".css")
+  .addEventListener(
+    "click",
+    () =>
+      (document.querySelector("#tipParagraph").textContent =
+        cssTips[Math.floor(Math.random() * cssTips.length)])
+  );
 
 const modal = document.querySelector(".modal");
+
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");

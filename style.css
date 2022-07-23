@@ -9,7 +9,8 @@ body {
   box-sizing: border-box;
   color: white;
   font-family: "Poppins", sans-serif;
-  background: url("img/bg-illo-3.2.jpg");
+  /* background: url("img/bg-illo-3.2.jpg"); */
+  background: url("https://github.com/JesacaLin/dev-kitty/blob/main/img/bg-illo-3.2.jpg?raw=true");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
