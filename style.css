@@ -2,7 +2,7 @@
 
 :root {
   font-size: 16px;
-  line-height: 3.5rem;
+  line-height: 3.2rem;
 }
 
 body {
@@ -139,33 +139,28 @@ header {
   justify-content: flex-end;
   max-width: 50%;
   min-height: 26rem;
-  margin: 30rem auto 0 auto;
+  margin: 20rem auto 0 auto;
+  list-style: none;
 }
 
-/* input[type="text"] {
-  width: 23rem;
-  height: 2.5rem;
-  color: #5f5d5d;
-  background: white;
-  border-radius: 10rem;
-  border: none;
-  font-size: 0.8rem;
-  padding-left: 1.5rem;
-  box-shadow: 0 13px 11px 7px rgba(0, 0, 0, 0.05);
-  margin-top: 8%;
-} */
-
 button {
-  width: 12rem;
-  height: 5rem;
+  width: 7rem;
+  height: 3rem;
   color: white;
   background: linear-gradient(to left, pink, #f8cd1a);
   border-radius: 5rem;
   border: none;
-  font-weight: 900;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
   text-align: center;
-  margin: 5% 0 20% 0;
+  margin: 0.6rem;
+}
+
+/* This is the surprise me button */
+.surprise {
+  width: 15rem;
+  height: 3rem;
+  margin: 2rem;
 }
 
 button:hover {
@@ -194,15 +189,7 @@ button:hover {
 }
 
 .close-modal {
-  width: 5rem;
-  height: 5rem;
-  color: white;
-  background: linear-gradient(to left, pink, #f8cd1a);
-  border-radius: 5rem;
-  border: none;
-  font-weight: 900;
-  font-size: 2rem;
-  text-align: center;
+  /* Will add specific spacing here maybe... */
 }
 
 .overlay {
@@ -212,12 +199,13 @@ button:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
   z-index: 5;
 }
 
 /********** MEDIA QUERIES **************/
-/* @media (max-width: 806px) {
+
+@media (max-width: 806px) {
   .span-logo {
     display: none;
   }
@@ -265,4 +253,4 @@ button:hover {
   .content {
     margin: 25rem auto 0 auto;
   }
-} */
+}
