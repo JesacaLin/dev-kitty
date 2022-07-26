@@ -71,23 +71,28 @@
       </header>
       <main>
         <section class="content">
-          <h3>Hi, Jesaca! Today is July 23, 2022.</h3>
           <h1>A banki a day, brings all the dev jobs your way!</h1>
           <h3>What would you like to study today?</h3>
-          <li>
-            <button class="show-modal behavorial">Behavioral</button>
-            <button class="show-modal html">HTML</button>
-            <button class="show-modal css">CSS</button>
-            <button class="show-modal js">JavaScript</button>
-            <button class="show-modal node">Node</button>
-          </li>
-          <li>
-            <button class="show-modal surprise">Surprise Me!</button>
+          <li class="show-modal">
+            <button class="behavorial">Behavioral</button>
+            <button class="html">HTML</button>
+            <button class="css">CSS</button>
+            <button class="js">JavaScript</button>
+            <button class="node">Node</button>
+            <button class="surprise">Surprise Me!</button>
           </li>
 
           <div class="modal hidden">
-            <h2>Question of the Day:</h2>
+            <h3 class="title">Question of the Day:</h3>
             <p id="tipParagraph"></p>
+
+            <h3 class="title">Buddy of the Day:</h3>
+            <img
+              class="surprise-image"
+              src=""
+              alt="Surprise cute animal photo"
+            />
+            <!-- <p id="adoptionInfo"></p> -->
             <li>
               <button class="close-modal">&times;</button>
               <button class="more-modal">More!</button>

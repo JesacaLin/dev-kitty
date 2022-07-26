@@ -192,6 +192,10 @@ button:hover {
   /* Will add specific spacing here maybe... */
 }
 
+.surprise-image {
+  max-width: 50%;
+}
+
 .overlay {
   position: absolute;
   top: 0;

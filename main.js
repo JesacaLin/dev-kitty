@@ -36,6 +36,26 @@ document.addEventListener("keydown", function (e) {
 
 //LOOK ---> calling and rendering the tips to the modal
 
+document.querySelector(".surprise").addEventListener("click", getSurpriseTips);
+
+//Surprise
+document.querySelector(".surprise").addEventListener("click", getSurpriseTips);
+
+function getSurpriseTips() {
+  fetch("https://dog.ceo/api/breeds/image/random")
+    .then((res) => res.json())
+    .then((data) => {
+      document.querySelector(".surprise-image").src = data.message;
+    })
+    .catch((err) => {
+      console.log("error ${err}");
+    });
+
+  document.querySelector("#tipParagraph").textContent =
+    surpriseTips[Math.floor(Math.random() * surpriseTips.length)];
+  moreModal.addEventListener("click", getSurpriseTips);
+}
+
 //BEHAVIORAL
 document.querySelector(".behavorial").addEventListener("click", getBehavorTips);
 
@@ -43,6 +63,7 @@ function getBehavorTips() {
   document.querySelector("#tipParagraph").textContent =
     behavorTips[Math.floor(Math.random() * behavorTips.length)];
   moreModal.addEventListener("click", getBehavorTips);
+  modal.classList.remove("#surprise-image");
 }
 
 //HTML
@@ -81,14 +102,7 @@ function getNodeTips() {
   moreModal.addEventListener("click", getNodeTips);
 }
 
-//Surprise
-document.querySelector(".surprise").addEventListener("click", getSurpriseTips);
-
-function getSurpriseTips() {
-  document.querySelector("#tipParagraph").textContent =
-    surpriseTips[Math.floor(Math.random() * surpriseTips.length)];
-  moreModal.addEventListener("click", getSurpriseTips);
-}
+//LOOK ---> adding an api to the Surprise modal
 
 //LOOK ---> TIPS
 
