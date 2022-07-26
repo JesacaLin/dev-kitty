@@ -12,7 +12,7 @@ const btnCloseModal = document.querySelector(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
 const moreModal = document.querySelector(".more-modal");
 
-//helper functions
+//HELPER FUNCTIONS
 function openModal() {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
@@ -27,6 +27,13 @@ function moreModalFunc(tipsFunc) {
   moreModal.addEventListener("click", tipsFunc);
 }
 
+function randomTipsGen(tips) {
+  document.querySelector("#tipParagraph").textContent =
+    tips[Math.floor(Math.random() * tips.length)];
+}
+
+//MODAL BEHAVIOR
+
 for (let i = 0; i < btnsOpenModal.length; i++) {
   btnsOpenModal[i].addEventListener("click", openModal);
 }
@@ -39,7 +46,8 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-//LOOK --->Someday...PetFinder api. For now it will be one cute pic of a dog per question...
+//LOOK --->ADDED API. Someday...PetFinder api.
+//For now it will be one cute pic of a dog per question...
 
 document.querySelector(".show-modal").addEventListener("click", getPics);
 
@@ -62,8 +70,7 @@ function getPics() {
 document.querySelector(".surprise").addEventListener("click", getSurpriseTips);
 
 function getSurpriseTips() {
-  document.querySelector("#tipParagraph").textContent =
-    surpriseTips[Math.floor(Math.random() * surpriseTips.length)];
+  randomTipsGen(surpriseTips);
   moreModalFunc(getSurpriseTips);
 }
 
@@ -71,8 +78,7 @@ function getSurpriseTips() {
 document.querySelector(".behavorial").addEventListener("click", getBehavorTips);
 
 function getBehavorTips() {
-  document.querySelector("#tipParagraph").textContent =
-    behavorTips[Math.floor(Math.random() * behavorTips.length)];
+  randomTipsGen(behavorTips);
   moreModalFunc(getBehavorTips);
 }
 
@@ -80,8 +86,7 @@ function getBehavorTips() {
 document.querySelector(".html").addEventListener("click", getHtmlTips);
 
 function getHtmlTips() {
-  document.querySelector("#tipParagraph").textContent =
-    htmlTips[Math.floor(Math.random() * htmlTips.length)];
+  randomTipsGen(htmlTips);
   moreModalFunc(getHtmlTips);
 }
 
@@ -89,8 +94,7 @@ function getHtmlTips() {
 document.querySelector(".css").addEventListener("click", getCssTips);
 
 function getCssTips() {
-  document.querySelector("#tipParagraph").textContent =
-    cssTips[Math.floor(Math.random() * cssTips.length)];
+  randomTipsGen(cssTips);
   moreModalFunc(getCssTips);
 }
 
@@ -98,8 +102,7 @@ function getCssTips() {
 document.querySelector(".js").addEventListener("click", getJsTips);
 
 function getJsTips() {
-  document.querySelector("#tipParagraph").textContent =
-    jsTips[Math.floor(Math.random() * jsTips.length)];
+  randomTipsGen(jsTips);
   moreModalFunc(getJsTips);
 }
 
@@ -107,12 +110,9 @@ function getJsTips() {
 document.querySelector(".node").addEventListener("click", getNodeTips);
 
 function getNodeTips() {
-  document.querySelector("#tipParagraph").textContent =
-    nodeTips[Math.floor(Math.random() * nodeTips.length)];
+  randomTipsGen(nodeTips);
   moreModalFunc(getNodeTips);
 }
-
-//LOOK ---> adding an api to the Surprise modal
 
 //LOOK ---> TIPS
 
