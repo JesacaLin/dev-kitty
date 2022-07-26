@@ -12,6 +12,7 @@ const btnCloseModal = document.querySelector(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
 const moreModal = document.querySelector(".more-modal");
 
+//helper functions
 function openModal() {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
@@ -20,6 +21,10 @@ function openModal() {
 function closeModal() {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
+}
+
+function moreModalFunc(tipsFunc) {
+  moreModal.addEventListener("click", tipsFunc);
 }
 
 for (let i = 0; i < btnsOpenModal.length; i++) {
@@ -34,14 +39,11 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-//LOOK ---> calling and rendering the tips to the modal
+//LOOK --->Someday...PetFinder api. For now it will be one cute pic of a dog per question...
 
-document.querySelector(".surprise").addEventListener("click", getSurpriseTips);
+document.querySelector(".show-modal").addEventListener("click", getPics);
 
-//Surprise
-document.querySelector(".surprise").addEventListener("click", getSurpriseTips);
-
-function getSurpriseTips() {
+function getPics() {
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((res) => res.json())
     .then((data) => {
@@ -51,9 +53,18 @@ function getSurpriseTips() {
       console.log("error ${err}");
     });
 
+  moreModalFunc(getPics);
+}
+
+//LOOK ---> calling and rendering the tips to the modal
+
+//SURPRISE
+document.querySelector(".surprise").addEventListener("click", getSurpriseTips);
+
+function getSurpriseTips() {
   document.querySelector("#tipParagraph").textContent =
     surpriseTips[Math.floor(Math.random() * surpriseTips.length)];
-  moreModal.addEventListener("click", getSurpriseTips);
+  moreModalFunc(getSurpriseTips);
 }
 
 //BEHAVIORAL
@@ -62,8 +73,7 @@ document.querySelector(".behavorial").addEventListener("click", getBehavorTips);
 function getBehavorTips() {
   document.querySelector("#tipParagraph").textContent =
     behavorTips[Math.floor(Math.random() * behavorTips.length)];
-  moreModal.addEventListener("click", getBehavorTips);
-  modal.classList.remove("#surprise-image");
+  moreModalFunc(getBehavorTips);
 }
 
 //HTML
@@ -72,7 +82,7 @@ document.querySelector(".html").addEventListener("click", getHtmlTips);
 function getHtmlTips() {
   document.querySelector("#tipParagraph").textContent =
     htmlTips[Math.floor(Math.random() * htmlTips.length)];
-  moreModal.addEventListener("click", getHtmlTips);
+  moreModalFunc(getHtmlTips);
 }
 
 //css
@@ -81,7 +91,7 @@ document.querySelector(".css").addEventListener("click", getCssTips);
 function getCssTips() {
   document.querySelector("#tipParagraph").textContent =
     cssTips[Math.floor(Math.random() * cssTips.length)];
-  moreModal.addEventListener("click", getCssTips);
+  moreModalFunc(getCssTips);
 }
 
 //JS
@@ -90,7 +100,7 @@ document.querySelector(".js").addEventListener("click", getJsTips);
 function getJsTips() {
   document.querySelector("#tipParagraph").textContent =
     jsTips[Math.floor(Math.random() * jsTips.length)];
-  moreModal.addEventListener("click", getJsTips);
+  moreModalFunc(getJsTips);
 }
 
 //Node
@@ -99,7 +109,7 @@ document.querySelector(".node").addEventListener("click", getNodeTips);
 function getNodeTips() {
   document.querySelector("#tipParagraph").textContent =
     nodeTips[Math.floor(Math.random() * nodeTips.length)];
-  moreModal.addEventListener("click", getNodeTips);
+  moreModalFunc(getNodeTips);
 }
 
 //LOOK ---> adding an api to the Surprise modal
@@ -107,10 +117,10 @@ function getNodeTips() {
 //LOOK ---> TIPS
 
 const behavorTips = [
-  "Give me an example of the project or initiative that you started on your own. It can be a non-business one. What prompted you to get started?",
+  "Give me an example of the project or initiative that you started on your own. What prompted you to get started?",
   "Tell me about a time you had to work on several projects at once. How did you handle this?",
-  "Describe a situation in which you felt you had not communicated well enough. What did you do? How did you handle it?",
-  "Tell me about when you had to deal with conflict within your team. How was the conflict solved? How did you handle that? How would you deal with it now?",
+  "Describe a situation in which you felt you had not communicated well enough. How did you handle it?",
+  "Tell me about when you had to deal with conflict within your team. How was the conflict solved? Would you do anything differently now?",
   "Give me an example of a time you had to take a creative and unusual approach to solve coding problem. How did this idea come to your mind? Why do you think it was unusual?",
 ];
 

@@ -37,6 +37,10 @@ h2 {
   margin-bottom: -1rem;
 }
 
+.secondaryTitle {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
   color: #fbcc18;
@@ -144,7 +148,7 @@ header {
 }
 
 button {
-  width: 7rem;
+  width: 8rem;
   height: 3rem;
   color: white;
   background: linear-gradient(to left, pink, #f8cd1a);
@@ -157,11 +161,11 @@ button {
 }
 
 /* This is the surprise me button */
-.surprise {
+/* .surprise {
   width: 15rem;
   height: 3rem;
   margin: 2rem;
-}
+} */
 
 button:hover {
   background: #54e1e4;
@@ -179,10 +183,10 @@ button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 50%;
+  width: 50%;
   color: black;
   background-color: white;
-  padding: 6rem;
+  padding: 4rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
