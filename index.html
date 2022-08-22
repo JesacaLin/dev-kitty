@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -20,66 +20,59 @@
   <body>
     <div class="container-header">
       <header>
-        <img
-          src="https://github.com/JesacaLin/dev-kitty/blob/main/img/logo2.png?raw=true"
-          class="logo"
-          alt="logo"
-        />
         <nav>
-          <img
-            src="img/hamburger-yellow.png"
-            class="hamburger"
-            alt="hamburger menu"
-          />
-          <ul class="ul-flex">
-            <div class="dropdown">
-              <span>DISCLAIMER</span>
-              <div class="dropdown-content">
-                <p>
-                  When in doubt, consult the
-                  <a href="https://developer.mozilla.org/">almighty MDN!</a> If
-                  you prefer Russian roulette...try
-                  <a href="https://stackoverflow.com/">Stack Overflow</a>
-                </p>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <span>CONTACT</span>
-              <div class="dropdown-content">
-                <ul>
-                  <span>JESACA LIN</span>
-                  <a href="https://github.com/JesacaLin" target="_blank"
-                    >Github</a
-                  >
-                  <a href="https://twitter.com/JesacaSoubiLin" target="_blank"
-                    >Twitter</a
-                  >
-                  <a href="https://www.jesacalin.com/" target="_blank"
-                    >Portfolio</a
-                  >
-                  <a
-                    href="https://www.instagram.com/jesacaslin/"
-                    target="_blank"
-                    >Instagram</a
-                  >
-                </ul>
-              </div>
-            </div>
-          </ul>
+          <img src="img/Github@2x.svg" class="logo" alt="Github logo" />
         </nav>
+        <div class="flex-header">
+          <div class="main-title">
+            <img src="img/DEV.png" alt="Dev Kitty title">
+          </div>
+          <div>
+            <img src="img/logo-yellow@2x.svg" class="main-title-logo" alt="site logo"/>
+          </div>
+          <p class="header-about">
+            //  Practice dev interview questions with 
+            cute animals in a judgement free zone  //
+          </p>
+          
+        </div>
       </header>
+
+      <section class="quote">
+        <p class="p-quote">
+          “We are what we repeatedly do. Excellence, then, is not an act, but a habit.” 
+          
+          -Will Durant
+        </p>
+        <img src="img/Background.jpg" class="cat-photo" alt="cat photo" />
+      </section>
+
       <main>
         <section class="content">
-          <h1>Banki a day, brings all the dev jobs your way!</h1>
-          <h4 class="secondaryTitle">What would you like to study today?</h4>
+          <!-- <h4 class="secondaryTitle">Hi, Jesaca</h4> -->
+          <p class="content-p">WHAT WOULD YOU 
+            LIKE TO STUDY
+            TODAY?</p>
           <li class="show-modal">
-            <button class="behavorial">Behavioral</button>
-            <button class="html">HTML</button>
-            <button class="css">CSS</button>
-            <button class="js">JavaScript</button>
-            <button class="node">Node</button>
-            <button class="surprise">Surprise Me!</button>
+            <button class="html">
+              <img src="img/cat.svg" class="animal-icons" alt="cat icon" />
+            </button>
+            <button class="css">
+              <img src="img/shark.svg" class="animal-icons" alt="shark icon" />
+            </button>
+            <button class="js">
+              <img src="img/llama.svg" class="animal-icons" alt="llama icon" />
+            </button>
+
+            <button class="node">
+              <img src="img/deer.svg" class="animal-icons" alt="deer icon" />
+            </button>
+            <button class="behavorial">
+              <img src="img/duck.svg" class="animal-icons" alt="duck icon" />
+            </button>
+            <button class="surprise">
+              <img src="img/beaver.svg" class="animal-icons" alt="beaver icon" />
+            </button>
           </li>
 
           <div class="modal hidden">
@@ -106,6 +99,51 @@
         </section>
       </main>
     </div>
+    <section class="about">
+      <section class="why">
+        <h3>why?</h3>
+        <p>
+          Please interviewing is hard! Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Tincidunt tortor aliquam nulla facilisi cras. In metus
+          vulputate eu scelerisque felis imperdiet proin.
+        </p>
+      </section>
+      <section class="tech">
+        <h3>Tech Used</h3>
+        <ul class="tech-used">
+          <img src="img/Javascript.svg" alt="javascript icon" />
+          <img src="img/HTML5.svg" alt="html icon" />
+          <img src="img/CSS3.svg" alt=" icon" />
+          <img src="img/Figma.svg" alt=" icon" />
+          <img src="img/npm.svg" alt=" icon" />
+          <img src="img/Nodejs.svg" alt=" icon" />
+          <img src="img/MongoDB.svg" alt=" icon" />
+          <img src="img/Heroku.svg" alt=" icon" />
+          <img src="img/Nodemon.svg" alt=" icon" />
+          <img src="img/Postman.svg" alt=" icon" />
+          <img src="img/Adobe Photoshop.svg" alt=" icon" />
+        </ul>
+      </section>
+    </section>
+    <footer>
+      <section class="footer-links">
+        <ul class="links">
+          <a href="/">// GITHUB</a>
+          <a href="/">// PORTFOLIO</a>
+          <a href="/">// CONTACT</a>
+        </ul>
+        <ul class="links">
+          <a href="/">// PROJECT ROADMAP</a>
+          <a href="/">//SUBMIT INTERVIEW QUESTIONS</a>
+          <a href="/">// SUGGESTIONS?</a>
+        </ul>
+      </section>
+      <div class="footer-title">
+        <img src="img/logo-yellow.svg" alt="yellow logo" />
+        <h2>DEV KITTY</h2>
+      </div>
+    </footer>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

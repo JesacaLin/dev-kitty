@@ -1,178 +1,153 @@
 /********** BASE STYLES **************/
-
-:root {
-  font-size: 16px;
-  line-height: 3.2rem;
+:root{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 body {
   box-sizing: border-box;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  /* background: url("img/bg-illo-3.2.jpg"); */
-  background: url("https://github.com/JesacaLin/dev-kitty/blob/main/img/bg-illo-3.2.jpg?raw=true");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
-  background-position: center center;
-  background-attachment: fixed;
-  /* min-height: 100%; */
-}
-
-h1,
-h2 {
-  padding: 0.5rem 0;
-}
-
-h1 {
-  font-size: clamp(1.5rem, 1rem + 4vw, 3rem);
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: -0.5rem;
-}
-
-h2 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: -1rem;
-}
-
-.secondaryTitle {
-  text-align: center;
+  color: black;
+  font-weight: 300;
+  font-size: 1.9rem;
+  /* line-height: 2.5rem; */
+  line-height: 169%;
+  letter-spacing: 0.02em;
+  font-family: "Akshar", sans-serif;
+  
 }
 
 a {
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
   text-decoration: none;
-  color: #fbcc18;
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0 0.5rem;
-  cursor: pointer;
+  color: #000000;
 }
 
 /********** HEADER **************/
-header {
+nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  padding-top: 2rem;
+}
+
+.flex-header {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 28rem;
+  margin-bottom: 5rem;
+}
+
+.main-title-logo {
+  max-width: 90%;
+}
+
+.header-about{
+  margin-left: auto;
+  white-space: pre-line;
+  
+}
+
+/***********QOUTE ***************/
+.quote {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  min-height: 2rem;
-  padding: 1rem 3rem 0.5rem 3rem;
+  background-image: url("img/Rectangle5.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.ul-flex {
-  display: flex;
-  flex-direction: row;
-  column-gap: 2rem;
+.p-quote {
+  width: 385px;
+  height: 228px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  white-space: pre-line;
+
 }
 
-.a-about:hover,
-.a-contact:hover {
-  color: #54e1e4;
-}
-
-.logo {
-  width: 3rem;
-}
-
-.span-logo {
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-.hamburger {
-  display: none;
-}
-
-/***********DROP DOWN ***************/
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown span {
-  font-size: 1rem;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background: linear-gradient(to left, pink, #f8cd1a);
-  min-width: 10rem;
-  min-height: 10rem;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 1rem;
-  padding: 2rem;
-  color: white;
-  font-size: 1rem;
-  font-weight: 300;
-  text-align: center;
-  line-height: 1.8rem;
-  z-index: 1;
-  right: 0;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  text-align: center;
-  list-style: none;
-}
-
-.dropdown-content a {
-  color: white;
-  list-style: none;
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-.dropdown-content span {
-  color: white;
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  margin-top: -1rem;
+.cat-photo {
+  left: 41.55%;
+  right: 4.11%;
+  top: 20.39%;
+  bottom: 53.74%;
+  border-radius: 25px;
+  margin-top: 8%;
 }
 
 /********** MAIN **************/
+main{
+width: 1288px;
+height: 1003px;
+left: 219px;
+top: 2572px;
+margin: auto;
+
+background: #F9F8F8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+}
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  max-width: 50%;
-  min-height: 26rem;
-  margin: 20rem auto 0 auto;
+  justify-content: flex-start;
+  align-items: flex-end;
+  max-width: 60%;
+  /* min-height: 26rem; */
+  margin: 10rem auto 0 auto;
   list-style: none;
 }
 
-button {
-  width: 8rem;
-  height: 3rem;
-  color: white;
-  background: linear-gradient(to left, pink, #f8cd1a);
-  border-radius: 5rem;
-  border: none;
-  font-weight: 600;
-  font-size: 1rem;
-  text-align: center;
-  margin: 0.6rem;
+.content-p{
+  font-size: 2.5rem;
+  font-weight: 400;
+  white-space: pre-line;
+  margin-right: auto;
+  margin-top: 6rem;
 }
 
-/* This is the surprise me button */
-/* .surprise {
-  width: 15rem;
-  height: 3rem;
-  margin: 2rem;
-} */
+
+button {
+  border: none;
+  padding: 0;
+  background: none;
+  /* max-width:80%; */
+  height: 15rem;
+  /* color: white; */
+  /* background: linear-gradient(to left, pink, #f8cd1a); */
+  /* border-radius: 25px; */
+  /* font-weight: 600; */
+  /* font-size: 1rem; */
+  /* text-align: bottom; */
+  /* margin-top: auto; */
+}
 
 button:hover {
-  background: #54e1e4;
-  background: linear-gradient(to left, #54e1e4, pink);
+  /* background: #54e1e4; */
+  background: linear-gradient(to bottom, pink, #f8cd1a);
+  background-blend-mode: lighten;
+  border-radius: 15rem;
+  /* background-image: url("img/Ellipse80.svg");
+  background-repeat: no-repeat;
+  background-size: 100%; */
+  /* max-height: 100%; */
+  cursor: pointer;
+}
+
+/* 
+.animal-icons{
+  max-width: 65%;
+  width: 3rem;
+} */
+
+/********** FOOTER *************/
+.footer-links {
 }
 
 /********** MODAL **************/
+/* THIS IS WHAT IS HIDDING THE  */
 .hidden {
   display: none;
 }
@@ -213,52 +188,9 @@ button:hover {
 
 /********** MEDIA QUERIES **************/
 
-@media (max-width: 806px) {
-  .span-logo {
-    display: none;
-  }
+/* Maybe larger sized screens, need to push the cat pic closer to the middle... */
 
-  .content {
-    margin: 22rem auto 0 auto;
-  }
+/* .cat-photo {
 
-  .dropdown span {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: clamp(1.3rem, 1rem + 4vw, 2.5rem);
-    font-weight: 800;
-  }
-
-  h2 {
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-
-  input[type="text"] {
-    width: 13rem;
-    height: 3rem;
-  }
-
-  button {
-    width: 6.5rem;
-    height: 6.5rem;
-    margin-top: 1rem;
-  }
-}
-
-@media (min-width: 1250px) {
-  body {
-    background-position: center 30%;
-  }
-
-  header {
-    max-width: 70%;
-    margin: 0 auto;
-  }
-
-  .content {
-    margin: 25rem auto 0 auto;
-  }
-}
+  margin-right: 5rem;
+} */

@@ -1,5 +1,5 @@
 # Dev-Kitty
 
-Personal project #1: Practice dev interview questions with cute animals in a judgement free zone!
+Personal project #1: A fun place to visit for some dev knowledge!
 
-HTML, CSS, JS, DOM, API
+HTML, CSS, JS, DOM
