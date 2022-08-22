@@ -1,5 +1,5 @@
 # Dev-Kitty
 
-Personal project #1: A stress-free place to practice interview questions! The pups will never judge your answers!
+Personal project #1: Practice dev interview questions with cute animals in a judgement free zone!
 
-HTML, CSS, JS, DOM
+HTML, CSS, JS, DOM, API
