@@ -1,5 +1,5 @@
 # Dev-Kitty
 
-Personal project #1: A fun place to visit for some dev knowledge!
+Practice dev interview questions with cute animals in a judgement free zone!
 
 HTML, CSS, JS, DOM, API
