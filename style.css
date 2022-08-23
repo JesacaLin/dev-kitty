@@ -269,24 +269,23 @@ a:hover {
 }
 
 .modal {
-  /* position: absolute; */
+  position: fixed;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
   color: black;
-  background-color: white;
+  background-color: #F9F8F8;;
   padding: 4rem;
-  border-radius: 5px;
+  border-radius: 25px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
   color: black;
   font-weight: 300;
-  font-size: 1.8rem;
-  line-height: 169%;
+  font-size: 1.6rem;
+  line-height: 139%;
   letter-spacing: 0.02em;
-  font-family: "Akshar", sans-serif;
 }
 
 .close-modal {
@@ -298,7 +297,7 @@ a:hover {
 }
 
 .overlay {
-  /* position: absolute; */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -306,6 +305,10 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   z-index: 5;
+}
+
+.flex-modal-btn{
+  /* display: flex; */
 }
 
 .more-modal, .close-modal{
@@ -322,7 +325,7 @@ background: linear-gradient(180deg, #FFC0CB 0%, rgba(254, 195, 167, 0.797368) 38
   text-align: center;
   margin: 0.6rem;
  
-  font-weight: 400;
+  font-weight: 300;
   /* font-size: 1.8rem; */
   line-height: 169%;
   letter-spacing: 0.02em;
