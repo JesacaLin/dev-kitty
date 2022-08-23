@@ -1,5 +1,7 @@
+
+
 /********** BASE STYLES **************/
-:root{
+.container-header, .quote, .tech, .footer-logo{
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -8,8 +10,7 @@ body {
   box-sizing: border-box;
   color: black;
   font-weight: 300;
-  font-size: 1.9rem;
-  /* line-height: 2.5rem; */
+  font-size: 1.8rem;
   line-height: 169%;
   letter-spacing: 0.02em;
   font-family: "Akshar", sans-serif;
@@ -34,18 +35,17 @@ nav {
 .flex-header {
   display: flex;
   align-items: flex-end;
-  margin-top: 28rem;
-  margin-bottom: 5rem;
+  margin-top: 19rem;
+  margin-bottom: 6.5rem;
 }
 
 .main-title-logo {
-  max-width: 90%;
+  max-width: 80%;
 }
 
 .header-about{
   margin-left: auto;
   white-space: pre-line;
-  
 }
 
 /***********QOUTE ***************/
@@ -55,7 +55,7 @@ nav {
   align-items: center;
   background-image: url("img/Rectangle5.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 85%;
 }
 
 .p-quote {
@@ -63,46 +63,47 @@ nav {
   height: 228px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  margin-top: 12%;
   white-space: pre-line;
-
 }
 
 .cat-photo {
+  align-self: flex-start;
   left: 41.55%;
   right: 4.11%;
-  top: 20.39%;
+  top: 30.39%;
   bottom: 53.74%;
-  border-radius: 25px;
-  margin-top: 8%;
+  border-radius: 30px;
+  margin-top: 10%;
+  width: 45rem;
+  padding-right: 1%;
 }
 
 /********** MAIN **************/
 main{
+background: #F9F8F8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 width: 1288px;
 height: 1003px;
 left: 219px;
 top: 2572px;
 margin: auto;
-
-background: #F9F8F8;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-
 }
+
+
 .content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
   max-width: 60%;
-  /* min-height: 26rem; */
   margin: 10rem auto 0 auto;
   list-style: none;
 }
 
 .content-p{
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 500;
   white-space: pre-line;
   margin-right: auto;
   margin-top: 6rem;
@@ -125,15 +126,13 @@ button {
 }
 
 button:hover {
-  /* background: #54e1e4; */
-  background: linear-gradient(to bottom, pink, #f8cd1a);
-  background-blend-mode: lighten;
+  background: linear-gradient(180deg, #FFC0CB 0%, rgba(254, 195, 167, 0.797368) 38.24%, rgba(252, 198, 115, 0.500622) 70.76%, rgba(248, 205, 26, 0) 112.21%);
+  opacity: 0.9;
   border-radius: 15rem;
-  /* background-image: url("img/Ellipse80.svg");
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: 100%; */
-  /* max-height: 100%; */
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* 
@@ -142,9 +141,126 @@ button:hover {
   width: 3rem;
 } */
 
-/********** FOOTER *************/
-.footer-links {
+
+ /********** ABOUT *************/
+ .about{
+  display: flex;
+  justify-content: center;
+  padding: 16rem 10rem 16rem 0;
+  /* margin-left: auto;
+  margin-right: auto; */
+ }
+
+ .why{
+  display: flex;
+  flex-direction: column;
+  width: 725px;
+  height: 583px;
+  left: 219px;
+  top: 3855px;
+  background: linear-gradient(180deg, #FFC0CB 0%, rgba(254, 195, 167, 0.797368) 38.24%, rgba(252, 198, 115, 0.500622) 70.76%, rgba(248, 205, 26, 0) 112.21%);
+  opacity: 0.9;
+  
+  /* border-radius: 25px; */
+
+ }
+
+.about-why{
+  font-size: 1.75rem;
+  font-weight: 500;
+  align-self: center;
+  padding-top: 2.5rem;
 }
+
+.about-p{
+  font-size: 1.4rem;
+  white-space: normal;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0rem 4rem 4rem 4rem;
+}
+
+.tech{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* right: 219px; */
+  /* margin-left: auto; */
+  margin-right: -10rem;
+  margin-left: 3rem;
+}
+
+.tech-used{
+  display: flex;
+  /* justify-content: space-between; */
+  list-style: none;
+  /* line-height: 50%; */
+  flex-wrap: wrap;
+  column-gap: 45px;
+  row-gap: 25px;
+  
+  /* padding: 0rem 3rem; */
+}
+
+.tech-used img{
+ display: flex;
+ flex-basis: auto;
+}
+
+
+/********** FOOTER *************/
+footer{
+background: #F9F8F8;
+background-repeat: no-repeat;
+background-size: 100% 80%;
+height: 392px;
+left: 0px;
+top: 4751px;
+padding: 4rem 0;
+}
+
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10rem;
+  column-gap: 150px;
+  /* margin-left: 3rem; */
+
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+a:hover {
+  background: linear-gradient(180deg, #FFC0CB 0%, rgba(254, 195, 167, 0.797368) 38.24%, rgba(252, 198, 115, 0.500622) 70.76%, rgba(248, 205, 26, 0) 112.21%);
+  opacity: 0.9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* border-radius: 15rem; */
+  /* background-repeat: no-repeat;
+  background-size: 100%; */
+  cursor: pointer;
+}
+
+
+.footer-title{
+  padding: 7rem 3rem 0rem 3rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
 
 /********** MODAL **************/
 /* THIS IS WHAT IS HIDDING THE  */
@@ -153,7 +269,7 @@ button:hover {
 }
 
 .modal {
-  position: absolute;
+  /* position: absolute; */
   text-align: center;
   top: 50%;
   left: 50%;
@@ -165,6 +281,12 @@ button:hover {
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  color: black;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 169%;
+  letter-spacing: 0.02em;
+  font-family: "Akshar", sans-serif;
 }
 
 .close-modal {
@@ -176,7 +298,7 @@ button:hover {
 }
 
 .overlay {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -185,6 +307,29 @@ button:hover {
   backdrop-filter: blur(5px);
   z-index: 5;
 }
+
+.more-modal, .close-modal{
+  width: 8rem;
+  height: 3rem;
+  color: black;
+background: linear-gradient(180deg, #FFC0CB 0%, rgba(254, 195, 167, 0.797368) 38.24%, rgba(252, 198, 115, 0.500622) 70.76%, rgba(248, 205, 26, 0) 112.21%);
+  opacity: 0.9;
+  /* stroke: 2px; */
+  border-radius: 5rem;
+  border: none;
+  /* font-weight: 600; */
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0.6rem;
+ 
+  font-weight: 400;
+  /* font-size: 1.8rem; */
+  line-height: 169%;
+  letter-spacing: 0.02em;
+  font-family: "Akshar", sans-serif;
+}
+
+
 
 /********** MEDIA QUERIES **************/
 
