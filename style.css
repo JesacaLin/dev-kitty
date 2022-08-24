@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
   color: black;
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 169%;
   letter-spacing: 0.02em;
   font-family: "Akshar", sans-serif;
@@ -18,8 +18,8 @@ body {
 }
 
 a {
-  font-size: 24px;
-  line-height: 22px;
+  font-size: 1.2rem;
+  line-height: .6rem;
   letter-spacing: 0.05em;
   text-decoration: none;
   color: #000000;
@@ -96,7 +96,7 @@ margin: auto;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  max-width: 60%;
+  max-width: 65%;
   margin: 10rem auto 0 auto;
   list-style: none;
 }
@@ -107,6 +107,7 @@ margin: auto;
   white-space: pre-line;
   margin-right: auto;
   margin-top: 6rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -217,6 +218,7 @@ height: 392px;
 left: 0px;
 top: 4751px;
 padding: 4rem 0;
+/* font-size: 1rem; */
 }
 
 
@@ -232,7 +234,7 @@ padding: 4rem 0;
 .links{
   display: flex;
   flex-direction: column;
-  row-gap: 35px;
+  row-gap: 30px;
 }
 
 a:hover {
