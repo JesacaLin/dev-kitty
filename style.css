@@ -67,24 +67,12 @@ nav {
   white-space: pre-line;
 }
 
-.cat-photo {
-  align-self: flex-start;
-  left: 41.55%;
-  right: 4.11%;
-  top: 30.39%;
-  bottom: 53.74%;
-  border-radius: 30px;
-  margin-top: 10%;
-  width: 45rem;
-  padding-right: 1%;
-}
-
 /********** MAIN **************/
 main{
 background: #F9F8F8;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 width: 1288px;
-height: 1003px;
+height: 1050px;
 left: 219px;
 top: 2572px;
 margin: auto;
@@ -112,8 +100,11 @@ margin: auto;
 
 
 button {
+  /* box-shadow: 2px 2px 5px #999; */
+border-radius: 15rem;
+padding-top: 1rem;
   border: none;
-  padding: 0;
+  /* padding: 0; */
   background: none;
   /* max-width:80%; */
   height: 15rem;
@@ -147,7 +138,7 @@ button:hover {
  .about{
   display: flex;
   justify-content: center;
-  padding: 16rem 10rem 16rem 0;
+  padding: 16rem 0rem 16rem 0;
   /* margin-left: auto;
   margin-right: auto; */
  }
@@ -159,12 +150,23 @@ button:hover {
   height: 583px;
   left: 219px;
   top: 3855px;
+  margin-right: 2rem;
   background: linear-gradient(180deg, #FFC0CB 0%, rgba(254, 195, 167, 0.797368) 38.24%, rgba(252, 198, 115, 0.500622) 70.76%, rgba(248, 205, 26, 0) 112.21%);
   opacity: 0.9;
-  
   /* border-radius: 25px; */
-
  }
+
+ .cat-photo {
+  /* align-self: flex-start; */
+  /* left: 41.55%;
+  right: 4.11%;
+  top: 30.39%;
+  bottom: 53.74%; */
+  /* border-radius: 30px; */
+  /* margin-top: 10%; */
+  width: 32rem;
+  /* padding-left: 1%; */
+}
 
 .about-why{
   font-size: 1.75rem;
