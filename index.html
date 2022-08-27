@@ -18,6 +18,8 @@
   </head>
 
   <body>
+
+      <!--*********HEADER*********  -->
     <div class="container-header">
       <header>
         <nav>
@@ -38,16 +40,10 @@
         </div>
       </header>
 
-      <!-- <section class="quote">
-        <p class="p-quote">
-          “We are what we repeatedly do. Excellence, then, is not an act, but a habit.” 
-          
-          -Will Durant
-        </p>
-        <img src="img/Background.jpg" class="cat-photo" alt="cat photo" />
-      </section> -->
 
+  <!--*********QUIZ SECTION*********  -->
       <main>
+        
         <section class="content">
           <!-- <h4 class="secondaryTitle">Hi, Jesaca</h4> -->
           <p class="content-p">WHAT WOULD YOU 
@@ -75,6 +71,7 @@
             </button>
           </li>
 
+<!--*********MODAL SECTION*********  -->
           <div class="modal hidden">
             <h3 class="title">Question:</h3>
             <p id="tipParagraph"></p>
@@ -101,24 +98,33 @@
     </div>
 
 
-    <section class="about">
-    
-      <!-- OMG USE THIS SECTION TO ADD TO DECK...Maybe make a form but connect it later?? maybe push the tech used to a new section -->
+<!--*********ADD A QUESTION SECTION*********  -->
+
+    <section class="add-a-question">
       <section class="add">
         <h4 class="about-why">ADD A QUESTION</h4>
-        <!-- <p class="about-p">
-          Please interviewing is hard! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi cras. In metus
-          vulputate eu scelerisque felis imperdiet proin.
-        </p> -->
-        <!-- <div style="width:80%;height:0;padding-bottom:72%;position:relative;"><iframe src="https://giphy.com/embed/mCRJDo24UvJMA" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div> -->
-
-        <div style="width:50%;height:0;padding-bottom:77%;position:relative;"><iframe src="https://giphy.com/embed/T5nP7Nwu5FzMc" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+        <!--*********DROPDOWN MENU*********  -->
+        <form action="#" class="add-q-form">
+          <label for="add-q-section"></label>
+          <select name="add-q-section" id="add-q-section">
+            <option value="html">CATEGORY</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JAVASCRIPT</option>
+            <option value="nodejs">NODE.JS</option>
+            <option value="behavorial">BEHAVORIAL</option>
+            <option value="surprise">SURPRISE ME!</option>
+        </select>
+        <input type="text" class="question-field" value="">
+        <input type="submit" class="submit-q" value="Add">
+      </form>
       </section>
-      <!-- <section>
-        <img src="img/Background.jpg" class="cat-photo" alt="cat photo" />
-      </section>
-    </section> -->
+     
+        <img src="img/bg-ask-cat.jpg" class="cat-photo" alt="cat photo"/>
+  
     </section>
+
+<!--*********TECH STACK SECTION*********  -->
       <section class="tech">
         <h4 class="about-why">TECH STACK</h4>
         <ul class="tech-used">
@@ -137,7 +143,9 @@
           <li><img src="img/npm.svg" alt=" icon" /> </li> 
         </ul>
       </section>
-   
+
+
+  <!--*********FOOTER*********  -->
     <footer>
       <section class="footer-links">
         <ul class="links">
