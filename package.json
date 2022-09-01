@@ -1,0 +1,30 @@
+{
+  "name": "dev-kitty",
+  "version": "1.0.0",
+  "description": "Practice dev interview questions",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesacaLin/dev-kitty.git"
+  },
+  "author": "Jesaca Lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesacaLin/dev-kitty/issues"
+  },
+  "homepage": "https://github.com/JesacaLin/dev-kitty#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
