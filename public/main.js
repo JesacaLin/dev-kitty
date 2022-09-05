@@ -9,13 +9,23 @@
 // import { behavorTips } from "./data.js";
 // import { htmlTips } from "./data.js";
 
-
 //LOOK ---> modal behavior
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
 const moreModal = document.querySelector(".more-modal");
+// const eraseText = document.querySelector('.add-q-form');
+
+//LOOK --> clears text field
+//this seem to prevent the data from going into the database.
+// eraseText.addEventListener("submit", clear);
+
+// function clear(event){
+//   event.preventDefault()
+//   event.target.reset()
+// }
+
 
 //HELPER FUNCTIONS
 function openModal() {
