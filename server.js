@@ -10,4 +10,8 @@ require('dotenv').config()//Things we want to keep private such as connection st
 //Set middleware
 app.set("view engine", "ejs") //establishing our view engine and ask it to use ejs
 app.use(express.static('public')) //Hey Express, if you need files that are client facing, look in public.
-app.use(express.urlencoded({extended: true})) //help validate the right type of data back and forth. Extended: true allows us to send more complex objects like arrays etc.
+app.use(express.urlencoded({extended: true})) //helps validate the right type of data back and forth. Extended: true allows us to send more complex objects like arrays etc.
+
+mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true}, () => {console.log('Connected to db!')}) //need to pass in connection string + some connection options
+
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`)) //helps to initialize the server
