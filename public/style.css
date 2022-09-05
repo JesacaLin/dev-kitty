@@ -31,7 +31,6 @@ a {
 
 
 
-
 /********** HEADER **************/
 nav {
   display: flex;
@@ -159,7 +158,7 @@ padding: 13rem 0rem;
   width: 1rem;
 }
 
-.title{
+select{
   width: 250px;
   height: 54px;
   left: 443px;
@@ -175,17 +174,17 @@ padding: 13rem 0rem;
   cursor: pointer;
 
   /* REPLACE THE DEFAULT STYLING(ARROW) */
-  /* appearance: none;
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   background-image: url(img/down-arrow.svg);
   background-size: 5%;
   background-repeat: no-repeat;
-  background-position: 75%; */
+  background-position: 75%;
 
 }
 
-.title, option{
+select, option{
   text-align: center;
 }
 
@@ -218,9 +217,6 @@ border: none;
 cursor: pointer;
 }
 
-.submit-q span{
-  top: 1062px
-}
 
  /********** TECH USED *************/
 .tech{
