@@ -3,22 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <link rel="stylesheet" href="reset.css"> -->
+<!-- GOOGLE FONT -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Akshar:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
+      rel="stylesheet"/>
+<!-- STYLE SHEET LINK -->
     <link rel="stylesheet" href="style.css" />
-
+<!-- SITE TITLE -->
     <title>Dev Kitty At Your Service</title>
   </head>
 
-  <body>
 
+  <body>
       <!--*********HEADER*********  -->
     <div class="container-header">
       <header>
@@ -43,7 +42,6 @@
 
   <!--*********QUIZ SECTION*********  -->
       <main>
-        
         <section class="content">
           <!-- <h4 class="secondaryTitle">Hi, Jesaca</h4> -->
           <p class="content-p">WHAT WOULD YOU 
@@ -66,7 +64,7 @@
             <button class="behavorial">
               <img src="img/duck.svg" class="animal-icons" alt="duck icon" />
             </button>
-            <button class="surprise">
+            <button class="my-question">
               <img src="img/beaver.svg" class="animal-icons" alt="beaver icon" />
             </button>
           </li>
@@ -104,20 +102,23 @@
       <section class="add">
         <h4 class="about-why">ADD A QUESTION</h4>
         <!--*********DROPDOWN MENU*********  -->
-        <form action="#" class="add-q-form">
-          <label for="add-q-section"></label>
-          <select name="add-q-section" id="add-q-section">
+        <form action="/" method="POST" class="add-q-form">
+          <!-- <label for="add-q-section"></label> -->
+          <input type="text" class="title" placeholder="Enter category">
+          <!-- <select name="add-q-section" id="add-q-section">
             <option value="html">CATEGORY</option>
             <option value="html">HTML</option>
             <option value="css">CSS</option>
             <option value="javascript">JAVASCRIPT</option>
             <option value="nodejs">NODE.JS</option>
             <option value="behavorial">BEHAVORIAL</option>
-            <option value="surprise">SURPRISE ME!</option>
-        </select>
+            <option value="my-question">MY QUESTIONS</option>
+        </select> -->
         <!-- WHAT I NEED IS A PSEOELEMENT AS A PLACEHOLDER IN THIS FEILD I THINK -->
         <textarea class="question-field" placeholder="Your question goes here..." wrap="soft"></textarea>
-        <input type="submit" class="submit-q" value="ADD">
+
+        <button type="submit" class="submit-q"><span>ADD</span></button>
+
       </form>
       </section>
      
@@ -169,8 +170,6 @@
     <!-- the exporting file has to always come first -->
     <script src="data.js"></script>
     <script src="main.js"></script>
-   
-
 
 
   </body>

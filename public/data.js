@@ -90,6 +90,6 @@ const behavorTips = [
     "What are Globals in Node.js?",
   ];
   
-  const surpriseTips = ["...Coming Soon!", "...Even more coming soon!", "...Let me ask Reddit"];
+  const myTips = ["...Coming Soon!", "...Even more coming soon!", "...Let me ask Reddit"];
   
 

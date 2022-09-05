@@ -73,11 +73,11 @@ function getPics() {
 //LOOK ---> calling and rendering the tips to the modal
 
 //SURPRISE
-document.querySelector(".surprise").addEventListener("click", getSurpriseTips);
+document.querySelector(".my-question").addEventListener("click", getMyTips);
 
-function getSurpriseTips() {
-  randomTipsGen(surpriseTips);
-  moreModalFunc(getSurpriseTips);
+function getMyTips() {
+  randomTipsGen(myTips);
+  moreModalFunc(getMyTips);
 }
 
 //BEHAVIORAL
