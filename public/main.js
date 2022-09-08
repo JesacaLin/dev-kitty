@@ -4,12 +4,12 @@
 //figure out how prevent the same tip from displaying back to back
 
 
-//LOOK --->IMPORTING DATA FROM ANOTHER FILE USING MODULES.
+//***************IMPORTING DATA FROM ANOTHER FILE USING MODULES.
 // Interestingly we can import array data from another document by using modules. It doesn't seem to work within the main.js file but it will work directly in the html file. Had to use import vs required as require only works on server side...https://tinyurl.com/2p8pxzya
 // import { behavorTips } from "./data.js";
 // import { htmlTips } from "./data.js";
 
-//LOOK ---> modal behavior
+//*************** modal behavior
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
@@ -17,17 +17,8 @@ const btnsOpenModal = document.querySelectorAll(".show-modal");
 const moreModal = document.querySelector(".more-modal");
 // const eraseText = document.querySelector('.add-q-form');
 
-//LOOK --> clears text field
-//this seem to prevent the data from going into the database.
-// eraseText.addEventListener("submit", clear);
 
-// function clear(event){
-//   event.preventDefault()
-//   event.target.reset()
-// }
-
-
-//HELPER FUNCTIONS
+//***************HELPER FUNCTIONS***************
 function openModal() {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
@@ -47,8 +38,9 @@ function randomTipsGen(tips) {
     tips[Math.floor(Math.random() * tips.length)];
 }
 
-//MODAL BEHAVIOR
+//I wonder if I have to make another randomTipsGen to draw from the database instead... Then don't I have to import the database? Maybe this needs to be done in the ejs file with a for loop...looping through the questions in the database.
 
+//***************MODAL BEHAVIOR***************
 for (let i = 0; i < btnsOpenModal.length; i++) {
   btnsOpenModal[i].addEventListener("click", openModal);
 }

@@ -112,7 +112,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: flex-start;
-padding: 13rem 0rem;
+padding: 10rem 0rem 10rem 0rem;
 
  }
 
@@ -203,7 +203,6 @@ select, option{
 
 }
 
-
 .submit-q{
 width: 150px;
 height: 54px;
@@ -217,12 +216,29 @@ border: none;
 cursor: pointer;
 }
 
+/********** RENDER USER QUESTIONS **************/
+.render{
+display: flex;
+flex-direction: column;
+outline-style: dotted;
+outline-color: #FFC0CB;
+/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); */
+width: 600px;
+height: 100%;
+left: 219px;
+top: 2572px;
+margin: auto;
+/* padding-bottom: 20rem; */
+}
+
+
 
  /********** TECH USED *************/
 .tech{
   display: flex;
  flex-direction: column;
   align-items: center;
+  padding-top: 20rem;
 }
 
 .tech-used{
@@ -292,6 +308,10 @@ a:hover {
 .footer-title{
   padding: 7rem 3rem 0rem 3rem;
 }
+
+
+
+
 
 
 /********** MODAL **************/

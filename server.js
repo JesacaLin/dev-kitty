@@ -29,13 +29,13 @@ app.get("/", async (req, res) => {
 app.post('/', async (req, res) => {
     const devkittyQ = new DevKittyQ(
         {
-
             category: req.body.category,
             content: req.body.content
         });
     try {
         await devkittyQ.save();
         console.log(devkittyQ)
+        //redirects to the add question section rather than top of the page.
         res.redirect("#redirect");
 
     } catch (err) {
