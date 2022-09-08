@@ -1,5 +1,5 @@
 # Dev-Kitty
 
-Practice dev interview questions with cute animals in a judgement free zone!
+A platform to practice dev interview questions with cute animals in a judgement free zone!
 
-HTML, CSS, JS, DOM, API
+FULL-STACK WEB APP: HTML, CSS, JS, DOM, API, MONGODB, EXPRESS, NODEJS.
