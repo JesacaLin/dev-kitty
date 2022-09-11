@@ -45,8 +45,8 @@ nav {
   margin-bottom: 6.5rem;
 }
 
-.main-title-logo {
-  max-width: 80%;
+.main-title-logo, .main-title {
+  max-width: 70%;
 }
 
 .header-about{
@@ -62,7 +62,7 @@ main{
 background: #F9F8F8;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 width: 1288px;
-height: 1050px;
+height: 950px;
 left: 219px;
 top: 2572px;
 margin: auto;
@@ -80,12 +80,16 @@ margin: auto;
 }
 
 .content-p{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   white-space: pre-line;
   margin-right: auto;
   margin-top: 6rem;
   padding-bottom: 2rem;
+}
+
+.animal-icons{
+  max-width: 90%;
 }
 
 
@@ -100,7 +104,7 @@ button {
 button:hover {
   background: linear-gradient(180deg, #FFC0CB 0%, rgba(254, 195, 167, 0.797368) 38.24%, rgba(252, 198, 115, 0.500622) 70.76%, rgba(248, 205, 26, 0) 112.21%);
   opacity: 0.9;
-  border-radius: 15rem;
+  border-radius: 50rem;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
@@ -299,20 +303,25 @@ border: none;
 cursor: pointer;
 }
 
+
+
 /********** RENDER USER QUESTIONS **************/
 .render{
 display: flex;
 flex-direction: column;
 outline-style: dotted;
 outline-color: #FFC0CB;
-max-width: 1288px;
+max-width: 1000px;
 height: 100%;
 left: 219px;
 top: 2572px;
 margin: auto;
 padding: 1rem 7rem 5rem 7rem;
-font-size: 1.3rem;
+font-size: 1.2rem;
 }
+
+
+
 .my-q-list{
   display: flex;
   flex-direction: row;
@@ -334,6 +343,89 @@ font-size: 1.3rem;
   margin-left: 1rem;
   margin-right: .5rem;
 }
+
+/* *********RENDER FOR EDIT.EJS */
+.nav-edit{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0rem 4rem 0rem;
+}
+.render-edit{
+  display: flex;
+  flex-direction: column;
+  outline-style: dotted;
+  outline-color: #FFC0CB;
+  border-radius: 25px;
+  max-width: 1200px;
+  height: 100%;
+  left: 219px;
+  top: 2572px;
+  margin: auto;
+  padding: 1rem 7rem 5rem 7rem;
+  font-size: 1.2rem;
+  }
+
+  .add-a-question-edit{
+    list-style: none;
+  }
+
+  .add-q-form-edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0rem ;
+    /* box-sizing: border-box; */
+  }
+
+  .category-edit{
+  width: 250px;
+  height: 54px;
+  left: 443px;
+  top: 2611.17px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  box-shadow: 0px 2px 2px 1px #FFC0CB;
+  padding: 1rem;
+  /* margin: 0 0 20px 0; */
+  stroke: #FFFFFF;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
+
+  .question-field-edit{
+      width: 418px;
+      height: 100%;
+      border-radius: 25px;
+      border: none;
+      padding: 2rem;
+      font-size: 1.1rem;
+      font-family: "Akshar", sans-serif;
+      /* border-style: dotted; */
+      box-shadow: 0px 2px 2px 1px #FFC0CB;
+      resize: none;
+  }
+  
+  .confirm, .cancel{
+      width: 120px;
+      height: 54px;
+      /* left: 493px;
+      top: 3062px; */
+      box-shadow: 0px 2px 2px 1px #FFC0CB;
+      border-radius: 25px;
+      background: #FFFFFF;
+      border: none;
+      text-align: center;
+      padding-top: 10px;
+      cursor: pointer;
+  }
+
 
  /********** TECH USED *************/
 .tech{

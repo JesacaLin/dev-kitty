@@ -44,5 +44,27 @@ app.post('/', async (req, res) => {
     }
 });
 
+//EDIT OR UPDATE METHOD - CHAINING METHODS TOGETHER
+app
+    .route("/edit/:id")
+    //re-get all the tasks
+    .get((req, res) => {
+        const id = req.params.id;
+        DevKittyQ.find({}, (err, myQuestions) => {
+            res.render("edit.ejs", { devkittyQ: myQuestions, idTask: id})
+        })
+    })
+    .post((req, res) =>{
+        const id = req.params.id;
+        DevKittyQ.findByIdAndUpdate(id, {
+            category: req.body.category,
+            content: req.body.content
+        },
+
+        err => {
+            if (err) return res.status(500).send(err);
+            res.redirect("/")
+        });
+    });
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`)) //helps to initialize the server
