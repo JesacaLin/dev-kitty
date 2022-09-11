@@ -12,6 +12,8 @@
       rel="stylesheet"/>
 <!-- STYLE SHEET LINK -->
     <link rel="stylesheet" href="style.css" />
+<!-- ICONS -->
+<script src="https://kit.fontawesome.com/ec41095585.js" crossorigin="anonymous"></script>
 <!-- SITE TITLE -->
     <title>Dev Kitty At Your Service</title>
   </head>
@@ -82,10 +84,10 @@
 
             <li class="flex-modal-btn">
               <div class="btn-break">
-                <button class="more-modal">More!</button>
+                <button class="save-modal"><img src="img/heart.svg" class="save" alt="save button"></button>
               </div>
               <div class="btn-break">
-                <button class="save-modal"><img src="img/heart.svg" class="save" alt="save button"></button>
+                <button class="more-modal">More!</button>
               </div>
               <div class="btn-break">
                 <button class="close-modal"><img src="img/x2.svg" class="close" alt="close button"></button>
@@ -107,13 +109,13 @@
         <!--*********DROPDOWN MENU*********  -->
         <form action="/" method="POST" class="add-q-form">
           <select name="category" id="add-q-section">
-            <option value="html">CATEGORY</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="javascript">JAVASCRIPT</option>
-            <option value="nodejs">NODE.JS</option>
-            <option value="behavorial">BEHAVORIAL</option>
-            <option value="my-question">OTHER</option>
+            <option value="Html">CATEGORY</option>
+            <option value="HTML/CSS">HTML/CSS</option>
+            <option value="JS">JAVASCRIPT</option>
+            <option value="FRAMEWORKS">FRAMEWORKS</option>
+            <option value="BACKEND">BACKEND</option>
+            <option value="BEHAVORIAL">BEHAVORIAL</option>
+            <option value="OTHER">OTHER</option>
         </select>
         <!-- WHAT I NEED IS A PSEOELEMENT AS A PLACEHOLDER IN THIS FEILD I THINK -->
         <textarea class="question-field" name="content" placeholder="Your question goes here..." wrap="soft"></textarea>
@@ -129,13 +131,16 @@
 
 
 <!--*********MY QUESTIONS SECTION*********  -->
+
 <section class="render">
 <h4 class="about-why">MY QUESTIONS</h4>
 <ul class="render-my-questions">
   <% devkittyQ.forEach(details => { %>
     <li class="my-q-list">
-      <!-- <div class="my-q-list-category"><p>Category:</p><%= details.category %></div> -->
+      <div class="my-q-list-category"><%= details.category %><span>:</span></div>
       <div class="my-q-list-content"><%= details.content %></div>
+      <a href="/edit/<%= details._id %>" class="edit"><span class="fa-regular fa-pen-to-square"></span></a>
+      <a href="/remove/<%= details._id %>" class="remove"><span class="fa-regular fa-trash-can"></span></a>
     </li>
   <% }) %>
 </ul>
@@ -172,8 +177,7 @@
     <footer>
       <section class="footer-links">
         <ul class="links">
-          <a href="/">// PROJECT PROPOSAL</a>
-          <a href="https://github.com/JesacaLin/dev-kitty.git" target="_blank">// GITHUB</a>
+          <a href="https://github.com/JesacaLin" target="_blank">// GITHUB</a>
           <a href="/">// PORTFOLIO</a>
           <a href="/">// CONTACT</a>
         </ul>
