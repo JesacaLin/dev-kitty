@@ -1,7 +1,7 @@
 //Declare variables 
 const express = require("express") //returns a function reference, that function is called with express()
 const app = express() //app is an object returned by express();
-const PORT = 8500; //setting up the listening port
+const PORT = 3000; //setting up the listening port
 const mongoose = require('mongoose')
 const DevKittyQ = require('./models/DevKittyQ') //DevKittyQ is where the mongoose models live
 require('dotenv').config()//Things we want to keep private such as connection string to mongodb.
