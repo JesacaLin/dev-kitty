@@ -133,18 +133,18 @@
 <!--*********MY QUESTIONS SECTION*********  -->
 
 <section class="render">
-<h4 class="about-why">MY QUESTIONS</h4>
-<ul class="render-my-questions">
-  <% devkittyQ.forEach(details => { %>
-    <li class="my-q-list">
-      <div class="my-q-list-category"><%= details.category %><span>:</span></div>
-      <div class="my-q-list-content"><%= details.content %></div>
-      <a href="/edit/<%= details._id %>" class="edit"><span class="fa-regular fa-pen-to-square"></span></a>
-      <a href="/remove/<%= details._id %>" class="remove"><span class="fa-regular fa-trash-can"></span></a>
-    </li>
-  <% }) %>
-</ul>
-</section>
+  <h4 class="about-why">MY QUESTIONS</h4>
+  <ul class="render-my-questions">
+    <% items.forEach(details => { %>
+      <li class="my-q-list">
+        <div class="my-q-list-category"><%= details.category %><span>:</span></div>
+        <div class="my-q-list-content"><%= details.content %></div>
+        <a href="/edit/<%= details._id %>" class="edit"><span class="fa-regular fa-pen-to-square"></span></a>
+        <a href="/remove/<%= details._id %>" class="remove"><span class="fa-regular fa-trash-can"></span></a>
+      </li>
+    <% }) %>
+  </ul>
+  </section>
 
 
 
@@ -199,3 +199,4 @@
 
   </body>
 </html>
+

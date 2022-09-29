@@ -31,7 +31,7 @@
     </div>
 
 <!--*********MY QUESTIONS SECTION*********  -->
-<section class="render-edit">
+<section class="render-edit" id="render-edit-redirect">
 <h4 class="about-why">EDIT MY QUESTIONS</h4>
 <ul class="render-my-questions">
 <% devkittyQ.forEach(details => { %>
@@ -46,7 +46,8 @@
         </li>
     <% } else{ %>
         <li class="my-q-list">
-            <div class="my-q-list-category"><%= details.category %><span>:</span></div>
+            <div class="my-q-list-category">
+              <%= details.category %><span>:</span></div>
             <div class="my-q-list-content"><%= details.content %></div>
             <a href="/edit/<%= details._id %>" class="edit"><span class="fa-regular fa-pen-to-square"></span></a>
             <a href="/remove/<%= details._id %>" class="remove"><span class="fa-regular fa-trash-can"></span></a>
@@ -83,4 +84,5 @@
 </body>
 
 </html>
+
 
