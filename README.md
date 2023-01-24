@@ -1,6 +1,6 @@
 # Dev-Kitty
 
-Dev Kitty is a full-stack web app launched to help developers practice and improve their skills through technical and behavioral interview questions. The app also includes cute dog photos to create a stress-free environment for learning. It is suitable for all skill levels and offers a range of questions for everyone.
+Dev Kitty is a full-stack web application designed to assist developers in honing their skills through a variety of technical and behavioral interview questions. The app also includes a collection of cute dog photos to create a relaxing and enjoyable learning experience. Suitable for developers of all skill levels, Dev Kitty offers a diverse selection of questions for users to practice and improve their abilities.
 
 ### Screenshots
 
