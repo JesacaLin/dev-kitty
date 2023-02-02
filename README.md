@@ -9,4 +9,4 @@ Dev Kitty is a full-stack web application designed to assist developers in honin
 
 ### Tech Stack
 
-JavaScript | Bootstrap | Node JS | Express | MongoDB | HTML 5 | CSS 3 | FIGMA
+JavaScript | Bootstrap 5 | Node JS | Express | MongoDB | HTML 5 | CSS 3 | Figma
